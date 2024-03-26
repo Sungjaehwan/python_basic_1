@@ -32,7 +32,7 @@ def main():
     st.dataframe(df, use_container_width=True)
 
     #pandas style - 두번째 표
-    st.tite("Maximum value per column")
+    st.title("Maximum value per column")
     st.dataframe(df.iloc[:5,2:].style.highlight_max(axis=0))
 
     plot_matplotlib() # 그래프 삽입
